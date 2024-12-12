@@ -1,0 +1,163 @@
+@import url(./colors.css);
+@import url(./font-family.css);
+@import url(./font-size.css);
+@import url(./font-spacing.css);
+@import url(./font-weight.css);
+
+.d-flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.d-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.d-flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* buttons */
+
+.button-primary {
+  border: 1px solid transparent;
+  padding: 0.6em 2rem;
+  font-size: var(--font-md);
+  font-weight: 500;
+  font-family: var(--font-family-manrope);
+  background-color: var(--color-white);
+  color: var(--color-red);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.button-secondary {
+  border: 1px solid var(--color-white);
+  padding: 0.6em 2rem;
+  font-size: var(--font-md);
+  font-weight: 500;
+  font-family: var(--font-family-manrope);
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--color-white);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: var(--color-white);
+  background-color: var(--color-red);
+  color: var(--color-white);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* fonts */
+
+.title {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-xl);
+  color: var(--color-white);
+  letter-spacing: var(--spacing-sm);
+}
+
+.title-section {
+  font-family: var(--font-family-mono);
+  font-weight: var(--font-weight-extralight);
+  font-size: var(--font-lg);
+  color: var(--color-white);
+  letter-spacing: var(--spacing-lg);
+}
+
+.title-form {
+  font-family: var(--font-family-mono);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-lg);
+  color: var(--color-white);
+  letter-spacing: var(--spacing-lg);
+}
+
+.text {
+  font-family: var(--font-family-manrope);
+  font-size: var(--font-md);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-white);
+  letter-spacing: var(--spacing-xs);
+}
+
+.footer-links {
+  font-family: var(--font-family-manrope);
+  font-size: var(--font-sm);
+  color: var(--color-red);
+  letter-spacing: var(--spacing-xs);
+  text-decoration: underline;
+}
+.footer-headers {
+  font-family: var(--font-family-manrope);
+  font-size: var(--font-sm);
+  color: var(--color-red);
+  letter-spacing: var(--spacing-xs);
+  text-transform: uppercase;
+}
+
+.footer-espolgan {
+  font-family: var(--font-family-manrope);
+  font-size: var(--font-md);
+  color: var(--color-red);
+  letter-spacing: var(--spacing-xs);
+  text-transform: uppercase;
+}
+
+.title-variants {
+  font-size: var(--font-lg);
+  font-family: var(--font-family-mono);
+  font-weight: var(--font-weight-extralight);
+  letter-spacing: var(--spacing-xl);
+  color: var(--color-white);
+}
+
+.title-types {
+  font-size: var(--font-xs);
+  font-family: var(--font-family-mono);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-white);
+}
+
+.title-types-black {
+  font-size: var(--font-xs);
+  font-family: var(--font-family-mono);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-black);
+}
+
+.text-error {
+  font-size: var(--font-error);
+  font-family: var(--font-family-manrope);
+  color: var(--color-red-error);
+}
+
+.text-copyright {
+  font-size: var(--font-xs);
+  font-family: var(--font-family-manrope);
+  color: var(--color-red);
+  letter-spacing: var(--spacing-xl);
+}
+
+@media (max-width: 768px) {
+  .button-primary {
+    background: none;
+    border: none;
+    padding: 0 1rem;
+    margin-left: 0;
+    color: var(--color-white);
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-semibold);
+    font-size: 3rem;
+  }
+}

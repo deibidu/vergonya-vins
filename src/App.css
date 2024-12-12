@@ -1,0 +1,55 @@
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero {
+  padding: 7.5rem 4rem;
+  background: url("/images/vi_hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: top;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.hero_container {
+  padding-left: 4rem;
+}
+
+@media (max-width: 978px) {
+  .hero {
+    padding: 4rem 2rem;
+    gap: 3rem;
+  }
+
+  .hero_container {
+    padding-left: 2rem;
+  }
+}
+
+@media (max-width: 590px) {
+  .hero_container img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 425px) {
+  .hero {
+    padding: 4rem 1.25rem 5rem 1.25rem;
+  }
+
+  .hero_container {
+    padding-left: 1rem;
+  }
+
+  .hero_container img {
+    width: 55%;
+  }
+}

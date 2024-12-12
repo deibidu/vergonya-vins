@@ -1,0 +1,31 @@
+@import url("../../styles/styles.css");
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 2.5rem;
+}
+
+.form_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form_container_label {
+  gap: 1rem;
+}
+
+.form_container_label_input {
+  border: none;
+  border-bottom: 1px solid var(--color-white);
+  background: none;
+}
+
+@media (max-width: 978px) {
+  .form {
+    gap: 1.25rem;
+    padding: 0;
+  }
+}

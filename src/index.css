@@ -1,0 +1,44 @@
+@import url(./styles/styles.css);
+:root {
+  font-family: Manrope, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 2;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: var(--color-white);
+  text-decoration: inherit;
+  cursor: pointer;
+}
+a:hover {
+  color: var(--color-white);
+  text-decoration: underline;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-red);
+  min-height: 100vh;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    line-height: 1.25;
+  }
+}

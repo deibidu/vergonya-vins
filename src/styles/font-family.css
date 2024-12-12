@@ -1,0 +1,26 @@
+:root {
+  --font-family-primary: "Air", sans-serif;
+  --font-family-mono: "Air Mono", monospace;
+  --font-family-text: "Manrope", sans-serif;
+}
+
+@font-face {
+  font-family: "Air";
+  src: url("/fonts/PPAir-SemiBold.otf") format("opentype");
+  font-weight: 600; /* Semibold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Air";
+  src: url("/fonts/PPAir-ExtraLight.otf") format("opentype");
+  font-weight: 200; /* Extralight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Air Mono";
+  src: url("/fonts/PPAir-MediumMono.otf") format("opentype");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
