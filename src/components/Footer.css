@@ -31,3 +31,17 @@
     padding: 0;
   }
 }
+
+@media (max-width: 510px) {
+  .footer {
+    gap: 2rem;
+    padding: 4rem 1.25rem 1.25rem 1.25rem;
+  }
+
+  .footer_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 2rem;
+  }
+}

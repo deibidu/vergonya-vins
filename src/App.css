@@ -40,9 +40,10 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 510px) {
   .hero {
     padding: 4rem 1.25rem 5rem 1.25rem;
+    margin-bottom: 10rem;
   }
 
   .hero_container {
@@ -50,6 +51,6 @@
   }
 
   .hero_container img {
-    width: 55%;
+    width: 40%;
   }
 }

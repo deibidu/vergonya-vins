@@ -63,7 +63,7 @@
 .vins_vi-blanc,
 .vins_vi-rosat {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   gap: 8rem;
   justify-content: space-between;
 }
@@ -140,7 +140,8 @@
 
 .contacte_container {
   display: grid;
-  grid-template-columns: auto auto;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
 
@@ -154,11 +155,41 @@
 }
 
 .final_image_img {
-  width: 40rem;
+  padding-top: 4rem;
+  width: 50rem;
   object-fit: cover;
 }
 
 /* breakpoints */
+
+@media (max-width: 1095px) {
+  .vins_vi-negre,
+  .vins_vi-blanc,
+  .vins_vi-rosat {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 4rem;
+  }
+
+  .vins_vi_image {
+    width: 100%;
+  }
+
+  .vins_vi-blanc .vins_vi_image {
+    order: 2;
+  }
+  .vins {
+    gap: 4rem;
+  }
+
+  .variants_images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+  }
+}
 
 @media (max-width: 1024px) {
   .main {
@@ -183,34 +214,6 @@
     width: 100%;
   }
 
-  .vins {
-    gap: 4rem;
-  }
-
-  .vins_vi-negre,
-  .vins_vi-blanc,
-  .vins_vi-rosat {
-    display: flex;
-    flex-direction: column;
-    grid-template-columns: auto;
-    gap: 4rem;
-  }
-
-  .vins_vi_image {
-    width: 100%;
-  }
-
-  .vins_vi-blanc .vins_vi_image {
-    order: 2;
-  }
-
-  .variants_images {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 4rem;
-  }
-
   .compromis_container {
     text-align: start;
     width: 100%;
@@ -229,7 +232,14 @@
   }
 
   .final_image_img {
-    width: 30rem;
+    padding-top: 4rem;
+    width: 25rem;
     object-fit: cover;
+  }
+}
+
+@media (max-width: 510px) {
+  h4 {
+    margin: 1rem 0;
   }
 }

@@ -1,7 +1,7 @@
 @import url(./styles/styles.css);
 :root {
   font-family: Manrope, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 2;
+  line-height: 1.75;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
