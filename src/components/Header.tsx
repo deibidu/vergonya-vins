@@ -8,7 +8,7 @@ export const Header = () => {
   const closeMenu = () => setIsOpen(false);
 
   useEffect(() => {
-    const handleEscape = (event) => {
+    const handleEscape = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
         setIsOpen(false);
       }
