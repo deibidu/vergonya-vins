@@ -36,7 +36,7 @@
 
 @media (max-width: 590px) {
   .hero_container img {
-    width: 70%;
+    width: 60%;
   }
 }
 
@@ -51,6 +51,6 @@
   }
 
   .hero_container img {
-    width: 40%;
+    object-fit: contain;
   }
 }
