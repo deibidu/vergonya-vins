@@ -25,7 +25,9 @@
 
 @media (max-width: 978px) {
   .form {
-    gap: 1.25rem;
     padding: 0;
+  }
+  .form_container {
+    gap: 2.5rem;
   }
 }

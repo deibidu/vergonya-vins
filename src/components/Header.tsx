@@ -34,7 +34,9 @@ export const Header = () => {
             <span></span>
             <span></span>
           </div>
-          <ul className={`nav_ul ${isOpen ? "nav_ul-open" : ""}`}>
+          <ul
+            className={`slide-in-bottom nav_ul ${isOpen ? "nav_ul-open" : ""}`}
+          >
             <button className="close-menu" onClick={closeMenu}>
               ✕
             </button>

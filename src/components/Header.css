@@ -3,6 +3,10 @@
 .nav {
   padding: 0 4rem;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: var(--color-red);
 }
 
 .nav_logo {
@@ -81,26 +85,31 @@
   }
 
   .nav_ul {
-    position: fixed;
-    top: -1rem;
-    padding-top: 2rem;
-    right: 0;
-    height: 100vh;
-    width: 425px;
+    position: absolute;
+    left: 0;
     display: flex;
     flex-direction: column;
-    justify-content: start;
     align-items: start;
-    background-color: var(--color-red);
-    gap: 2rem;
-    transition: right 0.3s ease-in-out;
-    z-index: 1000;
-    transform: translateX(100%);
-    box-shadow: inset 5px 0 var(--color-white);
+    line-height: 2.5;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: 0.3s ease all;
+    top: -1rem;
+    padding-top: 2rem;
+    animation-name: slide-in-bottom;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
   }
 
   .nav_ul.nav_ul-open {
     transform: translateX(0);
+    background-color: var(--color-red);
+    justify-content: start;
+    gap: 0;
   }
 
   .nav_ul li a {

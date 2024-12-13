@@ -99,6 +99,7 @@ button:focus-visible {
   color: var(--color-red);
   letter-spacing: var(--spacing-xs);
   text-decoration: underline;
+  line-height: 2;
 }
 .footer-headers {
   font-family: var(--font-family-manrope);
