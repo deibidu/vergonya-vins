@@ -32,12 +32,14 @@
   color: var(--color-red);
   cursor: pointer;
   transition: border-color 0.25s;
+  letter-spacing: var(--spacing-lg);
 }
 
 .button-secondary {
   border: 1px solid var(--color-white);
   padding: 0.6em 2rem;
   font-size: var(--font-md);
+  letter-spacing: var(--spacing-lg);
   font-weight: 500;
   font-family: var(--font-family-manrope);
   background-color: rgba(0, 0, 0, 0);
@@ -88,7 +90,7 @@ button:focus-visible {
   font-size: var(--font-md);
   font-weight: var(--font-weight-regular);
   color: var(--color-white);
-  letter-spacing: var(--spacing-xs);
+  letter-spacing: var(--spacing-sm);
 }
 
 .footer-links {
@@ -137,7 +139,7 @@ button:focus-visible {
 }
 
 .text-error {
-  font-size: var(--font-error);
+  font-size: var(--font-md);
   font-family: var(--font-family-manrope);
   color: var(--color-red-error);
 }

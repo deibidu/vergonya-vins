@@ -44,6 +44,7 @@
   .hero {
     padding: 4rem 1.25rem 5rem 1.25rem;
     margin-bottom: 10rem;
+    background-size: cover;
   }
 
   .hero_container {
@@ -51,6 +52,6 @@
   }
 
   .hero_container img {
-    object-fit: contain;
+    object-fit: fill;
   }
 }

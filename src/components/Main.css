@@ -9,6 +9,8 @@
   gap: 7.5rem;
   display: block;
   max-width: 100%;
+  z-index: 1;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* historia */
@@ -98,7 +100,7 @@
 .compromis {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 4rem;
 }
 
 .compromis_container {
@@ -193,9 +195,9 @@
 
 @media (max-width: 1024px) {
   .main {
-    padding: 4rem 2rem 0 2rem;
-    gap: 2rem;
-    display: block;
+    padding: 2rem 2rem 0 2rem;
+    row-gap: 2rem;
+    display: flex;
     max-width: 100%;
   }
 
@@ -212,6 +214,10 @@
   .historia_container {
     text-align: start;
     width: 100%;
+  }
+
+  .compromis {
+    gap: 0;
   }
 
   .compromis_container {

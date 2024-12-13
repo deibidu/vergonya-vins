@@ -37,6 +37,25 @@ li {
   padding: 0;
 }
 
+/* @keyframes show {
+  from {
+    opacity: 0.5;
+    scale: 50%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+img {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: show;
+} */
+
 @media (max-width: 1024px) {
   :root {
     line-height: 1.25;
