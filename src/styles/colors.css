@@ -6,4 +6,6 @@
   --color-red: #ae2c2e;
   --color-maroon: #b51928;
   --color-red-error: #ff4b4b;
+  --color-black-input: #1c1a1a;
+  --color-white-hover: rgba(255, 255, 255, 0.655);
 }

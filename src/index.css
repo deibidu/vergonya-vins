@@ -8,10 +8,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 a {
   color: var(--color-white);
   text-decoration: inherit;

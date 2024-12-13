@@ -20,7 +20,8 @@
 .form_container_label_input {
   border: none;
   border-bottom: 1px solid var(--color-white);
-  background: none;
+  background: var(--color-black-input);
+  padding: 0.7rem 0.5rem;
 }
 
 @media (max-width: 978px) {

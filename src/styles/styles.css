@@ -48,10 +48,11 @@
   transition: border-color 0.25s;
 }
 
-button:hover {
+.button-secondary:hover {
   border-color: var(--color-white);
-  background-color: var(--color-red);
-  color: var(--color-white);
+  background-color: var(--color-white-hover);
+  color: var(--color-black);
+  transition: all 0.4s ease;
 }
 
 button:focus,
