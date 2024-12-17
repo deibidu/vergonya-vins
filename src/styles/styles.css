@@ -146,11 +146,22 @@ button:focus-visible {
   color: var(--color-red-error);
 }
 
+.text-error p {
+  margin: 0;
+}
+
 .text-copyright {
   font-size: var(--font-xs);
   font-family: var(--font-family-manrope);
   color: var(--color-red);
   letter-spacing: var(--spacing-xl);
+}
+
+/* border */
+
+.border-error {
+  border: 2px solid;
+  border-color: var(--color-red-error);
 }
 
 @media (max-width: 768px) {

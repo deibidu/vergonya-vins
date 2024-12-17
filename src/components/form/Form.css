@@ -24,11 +24,54 @@
   padding: 0.7rem 0.5rem;
 }
 
+.modal {
+  position: fixed;
+  z-index: 1;
+  text-align: center;
+  justify-items: center;
+  background-color: var(--color-red);
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.173);
+  padding: 5.375rem 2.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
+.modal .title {
+  margin: 0;
+  font-size: 4rem;
+}
+
+.modal .text {
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+}
+
 @media (max-width: 978px) {
   .form {
     padding: 0;
   }
   .form_container {
     gap: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal .title {
+    margin-bottom: 0;
+    font-size: 3rem;
+  }
+
+  .modal .text {
+    font-size: 1rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 510px) {
+  .modal {
+    padding: 2rem 2.5rem;
+    width: 65%;
   }
 }
