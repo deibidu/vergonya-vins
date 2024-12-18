@@ -2,6 +2,7 @@
 
 .spinner {
   margin-left: 2rem;
+  margin-bottom: 1rem;
   border: 10px solid var(--color-white-hover);
   border-top: 10px solid var(--color-white);
   border-radius: 50%;
@@ -15,5 +16,11 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 510px) {
+  .spinner {
+    margin-left: 1rem;
   }
 }

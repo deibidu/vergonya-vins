@@ -65,7 +65,7 @@ export function Form(): JSX.Element {
         setEmail("");
         setName("");
         setMessage("");
-      }, 22000);
+      }, 2000);
     }
   };
 

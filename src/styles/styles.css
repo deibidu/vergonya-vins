@@ -55,6 +55,13 @@
   transition: all 0.4s ease;
 }
 
+.button-primary:hover {
+  border-color: var(--color-white);
+  background-color: var(--color-red);
+  color: var(--color-white);
+  transition: all 0.4s ease;
+}
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -174,5 +181,10 @@ button:focus-visible {
     font-family: var(--font-family-primary);
     font-weight: var(--font-weight-semibold);
     font-size: 3rem;
+    letter-spacing: 0;
+    padding: 2rem 1rem;
+  }
+  .button-primary:hover {
+    text-decoration: underline;
   }
 }

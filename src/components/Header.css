@@ -118,4 +118,7 @@
     font-weight: var(--font-weight-semibold);
     font-size: 3rem;
   }
+  .nav_ul:hover li a {
+    text-decoration: underline;
+  }
 }
